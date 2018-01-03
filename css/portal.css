@@ -1,0 +1,83 @@
+html
+{
+  position: relative;
+  min-height: 100%;
+}
+
+body
+{
+  overflow-x: hidden;
+}
+
+body.fixed-nav
+{
+  padding-top: 60px;
+}
+
+#mainNav  .navbar-nav .nav-item .nav-link
+{
+  cursor: pointer;
+}
+
+.help-window
+{
+    cursor: pointer;
+}
+
+.content-wrapper
+{
+    padding-top: 30px;
+    overflow-x: hidden;
+    background: white;
+}
+
+.col-form-label
+{
+    font-weight: bold;
+}
+
+@media (min-width: 992px)
+{
+    #mainNav .navbar-brand
+    {
+      width: 200px;
+    }
+    #mainNav .navbar-sidenav
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 56px;
+    }
+    .content-wrapper
+    {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 992px)
+
+{
+    .content-wrapper
+    {
+        margin-left: 0px;
+    }
+
+}
+
+
+.footer
+{
+    position: absolute;
+    right: 30%;
+    bottom: 0;
+    height: 0px;
+    line-height: 10px;
+    margin-bottom: 30px;
+    width: 300px;
+}
